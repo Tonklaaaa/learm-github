@@ -1,0 +1,330 @@
+.mitr-extralight {
+    font-family: "Mitr", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .mitr-light {
+    font-family: "Mitr", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .mitr-regular {
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .mitr-medium {
+    font-family: "Mitr", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .mitr-semibold {
+    font-family: "Mitr", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .mitr-bold {
+    font-family: "Mitr", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  /* font */
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background: url('../photo/hd\ GIF.gif') center center / cover no-repeat;
+  }
+
+  .overlay {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 20px;
+    border: 3px solid #fff;
+  }
+
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.5); /* ทำให้พื้นหลังโปร่งแสง */
+    border: 1px solid #a8a5a5;
+    border-radius: 8px;
+  }
+
+  .left, .right {
+    flex: 1 1 300px;
+    padding: 20px;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  p {
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 30px;
+  }
+
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+    transform: transform 0.3s;
+  }
+
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .gamil {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .phone {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /*--------------------------------------------*/
+
+  .main {
+  text-align:center;
+}
+
+@media screen and (min-width:650px) {
+    .main li {
+      width: 130px;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      display: inline-block;
+      margin-right: -4px;
+    }
+}
+
+.main a {
+  border-bottom: none;
+}
+
+.main > ul > li {
+  text-align: center;
+}
+
+.main > ul > li > a {
+  padding-left: 0;
+}
+
+.main li ul {
+  position: absolute;
+  display: none;
+  width: inherit;
+}
+
+.main li:hover ul {
+  display: block;
+}
+
+.main li ul li {
+  display:block;
+}
+
+.main ul {
+  width: 550px;
+  list-style: none;
+  text-align: left;
+  padding: 0%;
+  margin: auto;
+  text-align: center;
+}
+
+.main a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding-left: 15px;
+  transition: .3s;
+}
+
+.menu a:hover{
+  background-color: #7c7c7c;
+}
+
+.welcome {
+  padding: 30px;
+}
+
+.welcome img {
+  border-radius: 8px;
+  height: 300px;
+  width: 300px;
+}
+
+.welcome h2 {
+  color: #ae917c;
+}
+
+.banner h1 {
+  color: #ae917c;
+}
+
+.welcome p {
+  color: #ffffff;
+}
+
+/*---------------------------------------------*/
+
+.week {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.week-1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 2000px;
+}
+
+.week-1 img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.week-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+
+.week-1 img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.week-1 img:hover {
+    transform: scale(1.1);
+}
+
+.popup-- {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-- img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+}
+
+.popup--:target {
+    display: flex;
+}
+
+.week h1 {
+  color: #ffffff;
+}
+
+.week p {
+  color: #ffffff;
+}
+
+/*-----------------------------------------------*/
+
+  .week-2 {
+    object-fit: cover;
+    cursor: pointer;
+    transform: transform 0.3s;
+  }
+
+  .week-2 a:hover {
+    transform: scale(1.1);
+  }
+
+/*-------------------------------------------------------*/
+
+/*-----------------------------------------------*/
+
+  .week-3 {
+    object-fit: cover;
+    cursor: pointer;
+    transform: transform 0.3s;
+  }
+
+  .week-3 a:hover {
+    transform: scale(1.1);
+  }
+
+/*-------------------------------------------------------*/

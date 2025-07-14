@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing Gundam</title>
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<style>
+.luckiest-guy-regular {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  height: 180vh;
+  margin: 0;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+  url('../img/1295695.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+header {
+  padding: 10px 20px;
+  width: auto;
+  height: auto;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+}
+
+.banner {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.banner img {
+  align-items: center;
+  object-fit: cover;
+  height: auto;
+  width: 25%;
+  border-radius: 5px;
+  border: solid #000000 5px;
+  margin:10px;
+}
+
+.nav ul {
+  width: 550px;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: auto;
+}
+
+.nav li {
+  font-size: 1.2em;
+  line-height: 40px;
+  text-align: center;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s;
+  background: rgb(255, 255, 255 , 0.3);
+}
+
+.nav a:hover{
+  background-color: #424242;
+}
+
+.nav li li {
+  font-size: large;
+}
+
+/* Style menu for larger screens */
+
+@media screen and (min-width:650px) {
+    .nav li {
+      width: 130px;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      display: inline-block;
+      margin-right: -4px;
+    }
+}
+
+.nav a {
+  border-bottom: none;
+}
+
+.nav > ul > li {
+  text-align: center;
+}
+
+.nav > ul > li > a {
+  padding-left: 0;
+}
+
+/* Sub manu */
+.nav li ul {
+  position: absolute;
+  display: none;
+  width: inherit;
+}
+
+.nav li:hover ul {
+  display: block;
+}
+
+.nav li ul li {
+  display:block;
+}
+
+.nav p {
+  margin: 0%;
+}
+
+.gundam ul li a {
+  color: black;
+}
+
+.information h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.information>div {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.flex-con {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flex-con>div {
+  background-color: #ffffff;
+  border: 1px solid #9c9c9c;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.flex-con img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.flex-con>div:hover {
+  transform: scale(1.1);
+}
+
+.ข้อมูล h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+.ข้อมูล a {
+  text-decoration: none;
+}
+
+.ข้อมูล h1:hover {
+  transform: scale(1.2);
+}
+
+</style>
+<header>
+    <div class="banner" data-aos="fade-up">
+        <h1 class="luckiest-guy-regular">Wing Gundam</h1>
+        <div class="nav">
+            <ul>
+                <li class="home"><a href="/index.html"><p>Home</p></a></li>
+                <li class="gundam"><a href="#"><p>Gunpla</p></a>
+                    <ul>
+                        <li><a href="gunpla-01.html">gunpla-01</a></li>
+                        <li><a href="gunpla-02.html">gunpla-02</a></li>
+                        <li><a href="gunpla-03.html">gunpla-03</a></li>
+                        <li><a href="gunpla-04.html">gunpla-04</a></li>
+                        <li><a href="gunpla-05.html">gunpla-05</a></li>
+                        <li><a href="gunpla-06.html">gunpla-06</a></li>
+                        <li><a href="gunpla-07.html">gunpla-07</a></li>
+                        <li><a href="gunpla-08.html">gunpla-08</a></li>
+                        <li><a href="gunpla-09.html">gunpla-09</a></li> 
+                    </ul>
+                </li>
+        </div>
+        <img src="../img/7n.jpg" alt="gunpla">
+    </div>
+</header>
+<body>
+    <div class="main"> 
+        <div class="information" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+            <h1 class="luckiest-guy-regular">Highlight</h1>
+            <div>
+              <p>Bandai's Master Grade 1/100 Wing Gundam Ver KA. This gorgeous and ever popular finally gets the famous Katoki Hajime treatment, and in a Master Grade Gunpla model kit! Katoki Hajime's designs are unique and appealing, combined with Master Grade detail and engineering, this is bound to be one of the hottest machines in the Master Grade lineup! Over 260 pieces on 13 runners, plus polycaps; everything is molded in color and snaps together easily! ... And of course, no need of paint! The usual foil stickers for eyes and other "glowing" parts are included, as is a sheet of clear "Gundam Stickers" with various warnings and markings on them. This is a highly-poseable and heavily armed, this high tech beauty also transforms into flight mode once completed!</p>
+            </div>
+        <div class="flex-con">
+            <div data-aos="flip-left">
+              <img src="../img/r2.jpg" alt="" />
+            </div>
+            <div data-aos="flip-up">
+              <img src="../img/df.jpg" alt="" />
+            </div>
+            <div data-aos="flip-right">
+              <img src="../img/ra.jpg" alt="" />
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="ข้อมูล" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
+            <a href="https://www.vcagundam.com/product/353/mg-wing-gundam-ver-ka" target="_blank"><h1>ข้อมูลอ้างอิง</h1></a>
+        </div>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+
+</body>
+</html>

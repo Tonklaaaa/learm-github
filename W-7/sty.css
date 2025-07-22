@@ -1,0 +1,53 @@
+#main {
+    width: 90%;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: auto;
+}
+
+td {
+    padding: auto;
+    border: solid black 1px;
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody {
+    background-color: #fffacd;
+}
+
+thead td {
+    background-color: #a3e4d7;
+    font-weight: bolder;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+td[colspan] {
+    text-align: center;
+    font-weight: bold;
+    background-color: #fad7a0;
+    padding: 1.5rem;
+}
+
+td.L {
+    background-color: tomato;
+}
+
+caption {
+    margin-bottom: 20px;
+}
+
+caption a {
+    text-decoration: none;
+    color: black;
+}
+
+caption a:hover {
+    font-size:x-large;  
+    transform: scale(1.1);
+}

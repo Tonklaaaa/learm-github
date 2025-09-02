@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แบบฟอร์มขอความอนุเคราะห์เทียบชั่วโมงกิจกรรม</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-green-50 to-amber-50 min-h-screen py-6">
+  <div class="w-11/12 sm:w-10/12 md:w-8/12 lg:w-6/12 mx-auto bg-white rounded-2xl shadow-lg p-6 sm:p-8">
+    
+    <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-green-700 text-center mb-6">
+      แบบฟอร์มขอความอนุเคราะห์เทียบชั่วโมงกิจกรรม
+    </h1>
+
+    <form action="" class="space-y-6">
+      <!-- วันที่ -->
+      <div>
+        <label for="data_input" class="block font-medium mb-1">วันที่</label>
+        <input type="date" id="data_input" name="data_input" 
+               class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-green-400 focus:border-green-500">
+      </div>
+
+      <!-- ข้อมูลนักศึกษา -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <label for="sid" class="block font-medium mb-1">รหัสนักศึกษา</label>
+          <input type="text" id="sid" name="sid" 
+                 class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-green-400 focus:border-green-500">
+        </div>
+        <div>
+          <label for="fullname" class="block font-medium mb-1">ชื่อ-นามสกุล</label>
+          <input type="text" id="fullname" name="fullname" 
+                 class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-green-400 focus:border-green-500">
+        </div>
+        <div>
+          <label for="study_year" class="block font-medium mb-1">ชั้นปี</label>
+          <select id="study_year" name="study_year" 
+                  class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-green-400 focus:border-green-500">
+            <option>1</option><option>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option><option>8</option>
+          </select>
+        </div>
+        <div>
+          <label for="faculty" class="block font-medium mb-1">คณะ</label>
+          <select id="faculty" name="faculty" 
+                  class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-green-400 focus:border-green-500">
+            <option>คณะครุศาสตร์</option>
+            <option>คณะเทคโนโลยีการเกษตร</option>
+            <option>คณะมนุษย์ศาสตร์และสังคมศาสตร์</option>
+            <option>คณะวิทยาศาสตร์และเทคโนโลยี</option>
+            <option>คณะวิทยาการจัดการ</option>
+            <option>คณะเทคโนโลยีอุตสาหกรรม</option>
+            <option>คณะนิติศาสตร์</option>
+            <option>คณะนิเทศศาสตร์</option>
+            <option>คณะวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ</option>
+            <option>คณะพยาบาลศาสตร์</option>
+          </select>
+        </div>
+        <div class="md:col-span-2">
+          <label for="program" class="block font-medium mb-1">สาขาวิชา</label>
+          <input type="text" id="program" name="program" 
+                 class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-green-400 focus:border-green-500">
+        </div>
+        <div class="md:col-span-2">
+          <label for="phone" class="block font-medium mb-1">โทรศัพท์</label>
+          <input type="text" id="phone" name="phone" 
+                 class="w-full border rounded-lg p-2 focus:ring-2 focus:ring-green-400 focus:border-green-500">
+        </div>
+      </div>
+
+      <!-- ขอเทียบชั่วโมงกิจกรรม -->
+      <div class="border-t pt-4">
+        <p class="font-semibold text-green-800 mb-3">ขอเทียบชั่วโมงกิจกรรม โดยเทียบจาก</p>
+        <div class="space-y-3 text-gray-700">
+          <label class="flex items-start gap-2">
+            <input type="radio" name="transit_hour" value="60" class="mt-1 text-green-600 focus:ring-green-500">
+            <span>ตำแหน่งประธานสภานักศึกษา/นายกองค์การ/นายกสโมสรนักศึกษา (ไม่เกิน 60 ชั่วโมง)</span>
+          </label>
+          <label class="flex items-start gap-2">
+            <input type="radio" name="transit_hour" class="mt-1 text-green-600 focus:ring-green-500">
+            <span>ตำแหน่งบริหาร/คณะทำงานสภานักศึกษา/องค์การนักศึกษา/สโมสรนักศึกษา/ประธานชมรม/ประธานหอพัก</span>
+          </label>
+          <label class="flex items-start gap-2">
+            <input type="radio" name="transit_hour" class="mt-1 text-green-600 focus:ring-green-500">
+            <span>คณะทำงาน (Staff) หรือร่วมดำเนินโครงการ กรณีไม่น้อยกว่า 6 ชั่วโมง</span>
+          </label>
+          <label class="flex items-start gap-2">
+            <input type="radio" name="transit_hour" class="mt-1 text-green-600 focus:ring-green-500">
+            <span>คณะทำงาน (Staff) หรือร่วมดำเนินโครงการ กรณีมากกว่า 24 ชั่วโมง</span>
+          </label>
+          <label class="flex items-start gap-2">
+            <input type="radio" name="transit_hour" class="mt-1 text-green-600 focus:ring-green-500">
+            <span>ดำเนินกิจกรรมในฐานะผู้แทนมหาวิทยาลัย (ไม่เกิน 6 ชั่วโมง)</span>
+          </label>
+          <label class="flex items-start gap-2">
+            <input type="radio" name="transit_hour" class="mt-1 text-green-600 focus:ring-green-500">
+            <span>นักศึกษาที่มีความประพฤติดีเด่น (ไม่เกิน 24 ชั่วโมง)</span>
+          </label>
+          <label class="flex items-start gap-2">
+            <input type="radio" name="transit_hour" class="mt-1 text-green-600 focus:ring-green-500">
+            <span>นักศึกษาที่มีความคิดสร้างสรรค์ (ไม่เกิน 24 ชั่วโมง)</span>
+          </label>
+          <label class="flex items-start gap-2">
+            <input type="radio" name="transit_hour" class="mt-1 text-green-600 focus:ring-green-500">
+            <span>นักศึกษาที่มีผลงานด้านกีฬาดีเด่น (ไม่เกิน 24 ชั่วโมง)</span>
+          </label>
+          <label class="flex flex-col sm:flex-row sm:items-center gap-2">
+            <div class="flex items-start gap-2">
+              <input type="radio" name="transit_hour" class="mt-1 text-green-600 focus:ring-green-500">
+              <span>นักศึกษาที่มีผลงานดีเด่น อื่นๆ</span>
+            </div>
+            <input type="text" class="border rounded p-1 flex-1 focus:ring-2 focus:ring-green-400 focus:border-green-500" placeholder="เช่น แข่งขันโครงงาน">
+            <span class="text-sm text-gray-600">(ไม่เกิน 12 ชั่วโมง)</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- ปุ่มกด -->
+      <div class="text-center pt-4">
+        <button type="submit" 
+                class="w-full sm:w-auto bg-green-600 text-white px-6 py-2 rounded-lg shadow hover:bg-green-700 transition">
+          ส่งฟอร์ม
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
